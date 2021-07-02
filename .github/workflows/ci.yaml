@@ -1,14 +1,14 @@
-name: "CI/CD"
+name: CI/CD
 
 on:
   schedule:
     - cron: "0 10 * * 0" # Every Sunday at 10am
   push:
     branches:
-      - "main"
+      - main
   pull_request:
     branches:
-      - "main"
+      - main
 
 jobs:
   setup-and-lint:
