@@ -1,1 +1,2 @@
+---
 skips: ["B311"] # Standard pseudo-random generator is fine for use case

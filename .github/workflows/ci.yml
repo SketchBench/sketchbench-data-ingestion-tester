@@ -1,3 +1,4 @@
+---
 name: CI/CD
 
 on:
@@ -49,7 +50,7 @@ jobs:
       - name: Run security linter
         run: |
           source .venv/bin/activate
-          bandit --configfile bandit.yaml *.py
+          bandit --configfile bandit.yml *.py
       - name: Check for dodgy looking code
         run: |
           source .venv/bin/activate
