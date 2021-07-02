@@ -276,7 +276,7 @@ def create_message(message_id: int) -> Tuple[str, Dict[str, Any]]:
     type=click.STRING,
     help='Kerberos domain name to use in GSSAPI sasl mechanism handshake.',
 )
-def cli(  # noqa: WPS211,WPS216
+def cli(
     bootstrap_servers: Sequence[str],
     topic: str,
     number_messages: float,
