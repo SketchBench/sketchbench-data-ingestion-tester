@@ -47,7 +47,7 @@ Options:
 
 ## Example
 
-This repo also contains a [`docker-compose.yaml`](https://github.com/SketchBench/sketchbench-data-ingestion-tester/blob/main/docker-compose.yaml).
+This repo also contains a [`docker-compose.yml`](https://github.com/SketchBench/sketchbench-data-ingestion-tester/blob/main/docker-compose.yml).
 It builds the Docker image and starts the `sketchbench-data-ingestion-tester` together with:
 
 - `kafka` ([`docker.io/bitnami/kafka`](https://hub.docker.com/r/bitnami/kafka))
