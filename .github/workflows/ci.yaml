@@ -1,0 +1,133 @@
+name: ci
+
+on:
+  schedule:
+    - cron: "0 10 * * 0" # Every Sunday at 10am
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  setup-and-lint:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
+        os: [ubuntu-latest, macos-latest]
+    defaults:
+      run:
+        shell: bash
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Set up Poetry
+        uses: snok/install-poetry@v1.1.6
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v2
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+      - name: Check dependencies for known vulnerabilities
+        run: |
+          source .venv/bin/activate
+          safety check
+      - name: Run security linter
+        run: |
+          source .venv/bin/activate
+          bandit --configfile bandit.yaml *.py
+      - name: Check for dodgy looking code
+        run: |
+          source .venv/bin/activate
+          dodgy
+      - name: Run flake8 source code checker
+        run: |
+          source .venv/bin/activate
+          flake8 main.py
+      - name: Run mypy static type checker
+        run: |
+          source .venv/bin/activate
+          mypy main.py
+  build-and-push:
+    needs: setup-and-lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Prepare Docker metadata
+        id: meta
+        uses: docker/metadata-action@v3
+        with:
+          labels: |
+            org.opencontainers.image.description=Data ingestion test for SketchBench for all support Bullet schema types.
+            org.opencontainers.image.vendor=SketchBench
+          images: |
+            sketchbench/sketchbench-data-ingestion-tester
+            ghcr.io/SketchBench/sketchbench-data-ingestion-tester
+          tags: |
+            type=schedule,pattern={{date 'YYYYMMDD'}}
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
+            type=sha
+            type=edge
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to Docker Hub
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Login to GitHub Container Registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          platforms: linux/amd64,linux/arm64
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=registry,ref=sketchbench/sketchbench-data-ingestion-tester:main
+          cache-to: type=inline
+      - name: Inspect image
+        if: github.event_name != 'pull_request'
+        run: |
+          docker pull sketchbench/sketchbench-data-ingestion-tester:${{ steps.meta.outputs.version }}
+          docker image inspect sketchbench/sketchbench-data-ingestion-tester:${{ steps.meta.outputs.version }}
+      - name: Check manifest
+        if: github.event_name != 'pull_request'
+        run: |
+          docker buildx imagetools inspect sketchbench/sketchbench-data-ingestion-tester:${{ steps.meta.outputs.version }}
+      - name: Update Docker Hub repo description
+        if: github.event_name != 'pull_request'
+        uses: peter-evans/dockerhub-description@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          repository: sketchbench/sketchbench-data-ingestion-tester
+          short-description: Data ingestion test for SketchBench for all support Bullet schema types.
