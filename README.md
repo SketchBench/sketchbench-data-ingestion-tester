@@ -76,40 +76,40 @@ Optionally, include cleanup parameters `--rmi all --volumes --remove-orphans`.
 
 ```json
 {
-   "SketchBenchMessageID": 31,
+   "SketchBenchMessageID": 8,
    "SketchBenchBoolean": true,
-   "SketchBenchInteger": 141,
+   "SketchBenchInteger": 3583,
    "SketchBenchLong": 9223372036854776000,
-   "SketchBenchFloat": -0.8539659,
-   "SketchBenchDouble": -0.529517953770302,
-   "SketchBenchString": "extend magnetic e-markets",
+   "SketchBenchFloat": 0.4968928,
+   "SketchBenchDouble": -0.116756782941063,
+   "SketchBenchString": "mesh granular bandwidth",
    "SketchBenchBooleanMap": {
-      "SketchBenchBooleanOne": false,
-      "SketchBenchBooleanTwo": true
+      "SketchBenchBooleanOne": true,
+      "SketchBenchBooleanTwo": false
    },
    "SketchBenchIntegerMap": {
-      "SketchBenchIntegerOne": 1501,
-      "SketchBenchIntegerTwo": 9221
+      "SketchBenchIntegerOne": 7361,
+      "SketchBenchIntegerTwo": 3750
    },
    "SketchBenchLongMap": {
       "SketchBenchLongOne": 9223372036854776000,
       "SketchBenchLongTwo": 9223372036854776000
    },
    "SketchBenchFloatMap": {
-      "SketchBenchFloatOne": -0.4021153,
-      "SketchBenchFloatTwo": 0.9187859
+      "SketchBenchFloatOne": 0.6091936,
+      "SketchBenchFloatTwo": -0.9311707
    },
    "SketchBenchDoubleMap": {
-      "SketchBenchDoubleOne": 0.315264548785299,
-      "SketchBenchDoubleTwo": -0.762407252391137
+      "SketchBenchDoubleOne": -0.149212534103102,
+      "SketchBenchDoubleTwo": 0.986187516992927
    },
    "SketchBenchStringMap": {
-      "SketchBenchStringOne": "e-enable enterprise models",
-      "SketchBenchStringTwo": "Public-key impactful help-desk"
+      "SketchBenchStringOne": "drive world-class architectures",
+      "SketchBenchStringTwo": "Optimized even-keeled open architecture"
    },
    "SketchBenchBooleanMapMap": {
       "SketchBenchBooleanMapOne": {
-         "SketchBenchBooleanOne": true,
+         "SketchBenchBooleanOne": false,
          "SketchBenchBooleanTwo": true
       },
       "SketchBenchBooleanMapTwo": {
@@ -119,12 +119,12 @@ Optionally, include cleanup parameters `--rmi all --volumes --remove-orphans`.
    },
    "SketchBenchIntegerMapMap": {
       "SketchBenchIntegerMapOne": {
-         "SketchBenchIntegerOne": 1633,
-         "SketchBenchIntegerTwo": 3074
+         "SketchBenchIntegerOne": 8494,
+         "SketchBenchIntegerTwo": 5350
       },
       "SketchBenchIntegerMapTwo": {
-         "SketchBenchIntegerOne": 9616,
-         "SketchBenchIntegerTwo": 8785
+         "SketchBenchIntegerOne": 5889,
+         "SketchBenchIntegerTwo": 3983
       }
    },
    "SketchBenchLongMapMap": {
@@ -139,32 +139,32 @@ Optionally, include cleanup parameters `--rmi all --volumes --remove-orphans`.
    },
    "SketchBenchFloatMapMap": {
       "SketchBenchFloatMapOne": {
-         "SketchBenchFloatOne": -0.2370886,
-         "SketchBenchFloatTwo": 0.88226
+         "SketchBenchFloatOne": -0.4420025,
+         "SketchBenchFloatTwo": 0.438981
       },
       "SketchBenchFloatMapTwo": {
-         "SketchBenchFloatOne": -0.533147,
-         "SketchBenchFloatTwo": -0.7366217
+         "SketchBenchFloatOne": -0.4475535,
+         "SketchBenchFloatTwo": -0.9763844
       }
    },
    "SketchBenchDoubleMapMap": {
       "SketchBenchDoubleMapOne": {
-         "SketchBenchDoubleOne": 0.650313884339732,
-         "SketchBenchDoubleTwo": 0.949253289610448
+         "SketchBenchDoubleOne": -0.495523881349819,
+         "SketchBenchDoubleTwo": 0.190281932097149
       },
       "SketchBenchDoubleMapTwo": {
-         "SketchBenchDoubleOne": -0.15282554628291,
-         "SketchBenchDoubleTwo": -0.970043616249494
+         "SketchBenchDoubleOne": 0.786427699364296,
+         "SketchBenchDoubleTwo": -0.558253388273458
       }
    },
    "SketchBenchStringMapMap": {
       "SketchBenchStringMapOne": {
-         "SketchBenchStringOne": "streamline cross-platform niches",
-         "SketchBenchStringTwo": "Implemented attitude-oriented strategy"
+         "SketchBenchStringOne": "target customized schemas",
+         "SketchBenchStringTwo": "Ameliorated clear-thinking focus group"
       },
       "SketchBenchStringMapTwo": {
-         "SketchBenchStringOne": "re-contextualize killer paradigms",
-         "SketchBenchStringTwo": "Realigned secondary function"
+         "SketchBenchStringOne": "incubate web-enabled action-items",
+         "SketchBenchStringTwo": "Pre-emptive responsive neural-net"
       }
    },
    "SketchBenchBooleanList": [
@@ -172,84 +172,84 @@ Optionally, include cleanup parameters `--rmi all --volumes --remove-orphans`.
       true
    ],
    "SketchBenchIntegerList": [
-      7671,
-      318
+      6181,
+      354
    ],
    "SketchBenchLongList": [
       9223372036854776000,
       9223372036854776000
    ],
    "SketchBenchFloatList": [
-      0.3468411,
-      -0.274181
+      -0.1424044,
+      0.9347839
    ],
    "SketchBenchDoubleList": [
-      -0.593023836607392,
-      0.10903266469462
+      -0.326835817910416,
+      -0.533978554495603
    ],
    "SketchBenchStringList": [
-      "enable one-to-one interfaces",
-      "Function-based dynamic help-desk"
+      "envisioneer collaborative users",
+      "Ergonomic national superstructure"
    ],
-   "SketchBenchBooleanMapList": {
-      "SketchBenchBooleanListOne": [
-         false,
-         true
-      ],
-      "SketchBenchBooleanListTwo": [
-         true,
-         false
-      ]
-   },
-   "SketchBenchIntegerMapList": {
-      "SketchBenchIntegerListOne": [
-         6142,
-         9188
-      ],
-      "SketchBenchIntegerListTwo": [
-         569,
-         4465
-      ]
-   },
-   "SketchBenchLongMapList": {
-      "SketchBenchLongListOne": [
-         9223372036854776000,
-         9223372036854776000
-      ],
-      "SketchBenchLongListTwo": [
-         9223372036854776000,
-         9223372036854776000
-      ]
-   },
-   "SketchBenchFloatMapList": {
-      "SketchBenchFloatListOne": [
-         -0.6408545,
-         0.9645153
-      ],
-      "SketchBenchFloatListTwo": [
-         0.7020063,
-         -0.6172132
-      ]
-   },
-   "SketchBenchDoubleMapList": {
-      "SketchBenchDoubleListOne": [
-         0.586855576316007,
-         0.611186873781055
-      ],
-      "SketchBenchDoubleListTwo": [
-         -0.243311157263657,
-         -0.40322259324684
-      ]
-   },
-   "SketchBenchStringMapList": {
-      "SketchBenchStringListOne": [
-         "generate web-enabled schemas",
-         "Robust dynamic extranet"
-      ],
-      "SketchBenchStringListTwo": [
-         "incubate dot-com e-markets",
-         "Intuitive solution-oriented core"
-      ]
-   }
+   "SketchBenchBooleanMapList": [
+      {
+         "SketchBenchBooleanOne": true,
+         "SketchBenchBooleanTwo": false
+      },
+      {
+         "SketchBenchBooleanOne": false,
+         "SketchBenchBooleanTwo": false
+      }
+   ],
+   "SketchBenchIntegerMapList": [
+      {
+         "SketchBenchIntegerOne": 1385,
+         "SketchBenchIntegerTwo": 8705
+      },
+      {
+         "SketchBenchIntegerOne": 1292,
+         "SketchBenchIntegerTwo": 3537
+      }
+   ],
+   "SketchBenchLongMapList": [
+      {
+         "SketchBenchLongOne": 9223372036854776000,
+         "SketchBenchLongTwo": 9223372036854776000
+      },
+      {
+         "SketchBenchLongOne": 9223372036854776000,
+         "SketchBenchLongTwo": 9223372036854776000
+      }
+   ],
+   "SketchBenchFloatMapList": [
+      {
+         "SketchBenchFloatOne": -0.787982,
+         "SketchBenchFloatTwo": -0.9212975
+      },
+      {
+         "SketchBenchFloatOne": -0.1016218,
+         "SketchBenchFloatTwo": -0.9815003
+      }
+   ],
+   "SketchBenchDoubleMapList": [
+      {
+         "SketchBenchDoubleOne": 0.83640428357851,
+         "SketchBenchDoubleTwo": 0.99176170162883
+      },
+      {
+         "SketchBenchDoubleOne": 0.45293697921741,
+         "SketchBenchDoubleTwo": 0.629348839198145
+      }
+   ],
+   "SketchBenchStringMapList": [
+      {
+         "SketchBenchStringOne": "incubate 24/7 interfaces",
+         "SketchBenchStringTwo": "Customizable 4thgeneration database"
+      },
+      {
+         "SketchBenchStringOne": "embrace rich experiences",
+         "SketchBenchStringTwo": "Triple-buffered asymmetric workforce"
+      }
+   ]
 }
 ```
