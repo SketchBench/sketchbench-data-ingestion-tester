@@ -146,36 +146,48 @@ def create_message(message_id: int) -> Tuple[str, Dict[str, Any]]:
         'SketchBenchFloatList': [_float(), _float()],
         'SketchBenchDoubleList': [_double(), _double()],
         'SketchBenchStringList': [fake.bs(), fake.catch_phrase()],
-        'SketchBenchBooleanMapList': {
-            'SketchBenchBooleanListOne': [fake.boolean(), fake.boolean()],
-            'SketchBenchBooleanListTwo': [fake.boolean(), fake.boolean()],
-        },
-        'SketchBenchIntegerMapList': {
-            'SketchBenchIntegerListOne': [
-                fake.random_int(),
-                fake.random_int(),
-            ],
-            'SketchBenchIntegerListTwo': [
-                fake.random_int(),
-                fake.random_int(),
-            ],
-        },
-        'SketchBenchLongMapList': {
-            'SketchBenchLongListOne': [_long(), _long()],
-            'SketchBenchLongListTwo': [_long(), _long()],
-        },
-        'SketchBenchFloatMapList': {
-            'SketchBenchFloatListOne': [_float(), _float()],
-            'SketchBenchFloatListTwo': [_float(), _float()],
-        },
-        'SketchBenchDoubleMapList': {
-            'SketchBenchDoubleListOne': [_double(), _double()],
-            'SketchBenchDoubleListTwo': [_double(), _double()],
-        },
-        'SketchBenchStringMapList': {
-            'SketchBenchStringListOne': [fake.bs(), fake.catch_phrase()],
-            'SketchBenchStringListTwo': [fake.bs(), fake.catch_phrase()],
-        },
+        'SketchBenchBooleanMapList': [{
+            'SketchBenchBooleanOne': fake.boolean(),
+            'SketchBenchBooleanTwo': fake.boolean(),
+        }, {
+            'SketchBenchBooleanOne': fake.boolean(),
+            'SketchBenchBooleanTwo': fake.boolean(),
+        }],
+        'SketchBenchIntegerMapList': [{
+            'SketchBenchIntegerOne': fake.random_int(),
+            'SketchBenchIntegerTwo': fake.random_int(),
+        }, {
+            'SketchBenchIntegerOne': fake.random_int(),
+            'SketchBenchIntegerTwo': fake.random_int(),
+        }],
+        'SketchBenchLongMapList': [{
+            'SketchBenchLongOne': _long(),
+            'SketchBenchLongTwo': _long(),
+        }, {
+            'SketchBenchLongOne': _long(),
+            'SketchBenchLongTwo': _long(),
+        }],
+        'SketchBenchFloatMapList': [{
+            'SketchBenchFloatOne': _float(),
+            'SketchBenchFloatTwo': _float(),
+        }, {
+            'SketchBenchFloatOne': _float(),
+            'SketchBenchFloatTwo': _float(),
+        }],
+        'SketchBenchDoubleMapList': [{
+            'SketchBenchDoubleOne': _double(),
+            'SketchBenchDoubleTwo': _double(),
+        }, {
+            'SketchBenchDoubleOne': _double(),
+            'SketchBenchDoubleTwo': _double(),
+        }],
+        'SketchBenchStringMapList': [{
+            'SketchBenchStringOne': fake.bs(),
+            'SketchBenchStringTwo': fake.catch_phrase(),
+        }, {
+            'SketchBenchStringOne': fake.bs(),
+            'SketchBenchStringTwo': fake.catch_phrase(),
+        }],
     }
 
 

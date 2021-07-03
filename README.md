@@ -76,36 +76,36 @@ Optionally, include cleanup parameters `--rmi all --volumes --remove-orphans`.
 
 ```json
 {
-   "SketchBenchMessageID": 31,
-   "SketchBenchBoolean": true,
-   "SketchBenchInteger": 141,
-   "SketchBenchLong": 9223372036854776000,
-   "SketchBenchFloat": -0.8539659,
-   "SketchBenchDouble": -0.529517953770302,
-   "SketchBenchString": "extend magnetic e-markets",
+   "SketchBenchMessageID": 8,
+   "SketchBenchBoolean": false,
+   "SketchBenchInteger": 4680,
+   "SketchBenchLong": 17381163767201438000,
+   "SketchBenchFloat": -0.6736831,
+   "SketchBenchDouble": -0.71966375026374,
+   "SketchBenchString": "incentivize 24/7 ROI",
    "SketchBenchBooleanMap": {
-      "SketchBenchBooleanOne": false,
-      "SketchBenchBooleanTwo": true
+      "SketchBenchBooleanOne": true,
+      "SketchBenchBooleanTwo": false
    },
    "SketchBenchIntegerMap": {
-      "SketchBenchIntegerOne": 1501,
-      "SketchBenchIntegerTwo": 9221
+      "SketchBenchIntegerOne": 959,
+      "SketchBenchIntegerTwo": 3871
    },
    "SketchBenchLongMap": {
-      "SketchBenchLongOne": 9223372036854776000,
-      "SketchBenchLongTwo": 9223372036854776000
+      "SketchBenchLongOne": 12405357220187828000,
+      "SketchBenchLongTwo": 16599164916512221000
    },
    "SketchBenchFloatMap": {
-      "SketchBenchFloatOne": -0.4021153,
-      "SketchBenchFloatTwo": 0.9187859
+      "SketchBenchFloatOne": -0.6615189,
+      "SketchBenchFloatTwo": 0.4545328
    },
    "SketchBenchDoubleMap": {
-      "SketchBenchDoubleOne": 0.315264548785299,
-      "SketchBenchDoubleTwo": -0.762407252391137
+      "SketchBenchDoubleOne": 0.595727791717468,
+      "SketchBenchDoubleTwo": -0.470706766232865
    },
    "SketchBenchStringMap": {
-      "SketchBenchStringOne": "e-enable enterprise models",
-      "SketchBenchStringTwo": "Public-key impactful help-desk"
+      "SketchBenchStringOne": "evolve seamless convergence",
+      "SketchBenchStringTwo": "Sharable client-server Graphic Interface"
    },
    "SketchBenchBooleanMapMap": {
       "SketchBenchBooleanMapOne": {
@@ -113,58 +113,58 @@ Optionally, include cleanup parameters `--rmi all --volumes --remove-orphans`.
          "SketchBenchBooleanTwo": true
       },
       "SketchBenchBooleanMapTwo": {
-         "SketchBenchBooleanOne": false,
+         "SketchBenchBooleanOne": true,
          "SketchBenchBooleanTwo": true
       }
    },
    "SketchBenchIntegerMapMap": {
       "SketchBenchIntegerMapOne": {
-         "SketchBenchIntegerOne": 1633,
-         "SketchBenchIntegerTwo": 3074
+         "SketchBenchIntegerOne": 3002,
+         "SketchBenchIntegerTwo": 2474
       },
       "SketchBenchIntegerMapTwo": {
-         "SketchBenchIntegerOne": 9616,
-         "SketchBenchIntegerTwo": 8785
+         "SketchBenchIntegerOne": 7719,
+         "SketchBenchIntegerTwo": 124
       }
    },
    "SketchBenchLongMapMap": {
       "SketchBenchLongMapOne": {
-         "SketchBenchLongOne": 9223372036854776000,
-         "SketchBenchLongTwo": 9223372036854776000
+         "SketchBenchLongOne": 9753260017885856000,
+         "SketchBenchLongTwo": 16734300098606176000
       },
       "SketchBenchLongMapTwo": {
-         "SketchBenchLongOne": 9223372036854776000,
-         "SketchBenchLongTwo": 9223372036854776000
+         "SketchBenchLongOne": 13311185963017191000,
+         "SketchBenchLongTwo": 13012292389728508000
       }
    },
    "SketchBenchFloatMapMap": {
       "SketchBenchFloatMapOne": {
-         "SketchBenchFloatOne": -0.2370886,
-         "SketchBenchFloatTwo": 0.88226
+         "SketchBenchFloatOne": 0.3517626,
+         "SketchBenchFloatTwo": -0.5237855
       },
       "SketchBenchFloatMapTwo": {
-         "SketchBenchFloatOne": -0.533147,
-         "SketchBenchFloatTwo": -0.7366217
+         "SketchBenchFloatOne": 0.1630309,
+         "SketchBenchFloatTwo": 0.4890072
       }
    },
    "SketchBenchDoubleMapMap": {
       "SketchBenchDoubleMapOne": {
-         "SketchBenchDoubleOne": 0.650313884339732,
-         "SketchBenchDoubleTwo": 0.949253289610448
+         "SketchBenchDoubleOne": -0.52442321009014,
+         "SketchBenchDoubleTwo": -0.368535996960704
       },
       "SketchBenchDoubleMapTwo": {
-         "SketchBenchDoubleOne": -0.15282554628291,
-         "SketchBenchDoubleTwo": -0.970043616249494
+         "SketchBenchDoubleOne": -0.314387669891155,
+         "SketchBenchDoubleTwo": -0.66959359075869
       }
    },
    "SketchBenchStringMapMap": {
       "SketchBenchStringMapOne": {
-         "SketchBenchStringOne": "streamline cross-platform niches",
-         "SketchBenchStringTwo": "Implemented attitude-oriented strategy"
+         "SketchBenchStringOne": "generate B2C action-items",
+         "SketchBenchStringTwo": "Grass-roots hybrid migration"
       },
       "SketchBenchStringMapTwo": {
-         "SketchBenchStringOne": "re-contextualize killer paradigms",
-         "SketchBenchStringTwo": "Realigned secondary function"
+         "SketchBenchStringOne": "synthesize one-to-one eyeballs",
+         "SketchBenchStringTwo": "Proactive didactic middleware"
       }
    },
    "SketchBenchBooleanList": [
@@ -172,83 +172,83 @@ Optionally, include cleanup parameters `--rmi all --volumes --remove-orphans`.
       true
    ],
    "SketchBenchIntegerList": [
-      7671,
-      318
+      4673,
+      8126
    ],
    "SketchBenchLongList": [
-      9223372036854776000,
-      9223372036854776000
+      17795363561565530000,
+      17010220832115091000
    ],
    "SketchBenchFloatList": [
-      0.3468411,
-      -0.274181
+      -0.133418,
+      0.6225013
    ],
    "SketchBenchDoubleList": [
-      -0.593023836607392,
-      0.10903266469462
+      0.729906939516728,
+      -0.331646744564121
    ],
    "SketchBenchStringList": [
-      "enable one-to-one interfaces",
-      "Function-based dynamic help-desk"
+      "leverage synergistic networks",
+      "Function-based 4thgeneration instruction set"
    ],
    "SketchBenchBooleanMapList": {
       "SketchBenchBooleanListOne": [
-         false,
+         true,
          true
       ],
       "SketchBenchBooleanListTwo": [
-         true,
-         false
+         false,
+         true
       ]
    },
    "SketchBenchIntegerMapList": {
       "SketchBenchIntegerListOne": [
-         6142,
-         9188
+         3652,
+         1258
       ],
       "SketchBenchIntegerListTwo": [
-         569,
-         4465
+         2341,
+         1204
       ]
    },
    "SketchBenchLongMapList": {
       "SketchBenchLongListOne": [
-         9223372036854776000,
-         9223372036854776000
+         10821444901808830000,
+         16680769582394352000
       ],
       "SketchBenchLongListTwo": [
-         9223372036854776000,
-         9223372036854776000
+         12451900065695437000,
+         14809527274602793000
       ]
    },
    "SketchBenchFloatMapList": {
       "SketchBenchFloatListOne": [
-         -0.6408545,
-         0.9645153
+         -0.7972251,
+         -0.535875
       ],
       "SketchBenchFloatListTwo": [
-         0.7020063,
-         -0.6172132
+         -0.3798413,
+         0.8174764
       ]
    },
    "SketchBenchDoubleMapList": {
       "SketchBenchDoubleListOne": [
-         0.586855576316007,
-         0.611186873781055
+         0.851025432527654,
+         0.426357379131281
       ],
       "SketchBenchDoubleListTwo": [
-         -0.243311157263657,
-         -0.40322259324684
+         0.998496492495993,
+         0.843068760260131
       ]
    },
    "SketchBenchStringMapList": {
       "SketchBenchStringListOne": [
-         "generate web-enabled schemas",
-         "Robust dynamic extranet"
+         "generate plug-and-play ROI",
+         "Total secondary core"
       ],
       "SketchBenchStringListTwo": [
-         "incubate dot-com e-markets",
-         "Intuitive solution-oriented core"
+         "enhance scalable convergence",
+         "Re-engineered systematic methodology"
       ]
    }
 }
